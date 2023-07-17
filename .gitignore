@@ -1,0 +1,23 @@
+# Ignore Terraform files
+*.tfstate
+*.tfstate.backup
+*.tfplan
+.terraform/
+terraform.tfstate.d/
+
+# Ignore .terraform.lock.hcl file on Terraform v1.0+
+# Uncomment the following line if you are using Terraform v1.0 or later
+# tf.lock.hcl
+
+# Ignore override files as they are usually used to override resources locally and should not be committed
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore any .terraformrc files as they might contain sensitive data
+.terraformrc
+
+# Ignore CLI configuration files
+.terraform.d/plugins/
+.terraform.d/plugin-cache/
